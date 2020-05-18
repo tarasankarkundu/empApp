@@ -1,7 +1,7 @@
 <div class="header">
   <i class="fa fa-bell"></i>
   <span class="badge">22</span>
-  <select (change)='onTeamSelect($event)'>
+  <select (change)='onTeamSelect($event)' [(ngModel)]="selectedTeam">
     <option value='select'>Select</option>
       <option *ngFor='let x of teams' [value]='x'>{{x}}</option>
   </select>

@@ -11,6 +11,7 @@ import { EmployeeListComponent } from './components/employee-list/employee-list.
 import { AdvancedSearchComponent } from './components/side-menu/advanced-search/advanced-search.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NgxStarsModule } from 'ngx-stars';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { NgxStarsModule } from 'ngx-stars';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     NgxStarsModule
   ],
   providers: [],

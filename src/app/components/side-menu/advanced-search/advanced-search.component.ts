@@ -36,7 +36,8 @@ export class AdvancedSearchComponent implements OnInit {
     })
   }
   onSubmit(){
-    // console.log(this.advSearchForm);
+    this.employeeService.resetTeams.emit();
+    this.employeeService.resetBlrOnly.emit();
     this.employeeService.advanceSearch.emit(this.advSearchForm.value);
     this.close.emit();
   }
