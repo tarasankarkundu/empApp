@@ -1,0 +1,50 @@
+<div class="advSearch">
+  <form [formGroup]="advSearchForm" (ngSubmit)="onSubmit()">
+    <ul class="menu">
+      <li>
+        <label for="department">Department</label>
+        <select id="department" formControlName="department">
+          <option [value]='null'>Select</option>
+          <option *ngFor='let x of deparments' [value]='x'>{{x}}</option>
+        </select>
+      </li>
+      <li>
+        <label for="role">Role</label>
+        <select id="role" formControlName="roleType">
+          <option [value]='null'>Select</option>
+          <option *ngFor='let x of roles' [value]='x'>{{x}}</option>
+        </select>
+      </li>
+       <li>
+        <label for="designation">Designation</label>
+        <select id="designation" formControlName="designation">
+          <option [value]='null'>Select</option>
+          <option *ngFor='let x of designations' [value]='x'>{{x}}</option>
+        </select>
+      </li>
+      <li>
+        <label for="yoj">Year of Joining</label>
+        <select id="yoj" formControlName="yoj">
+          <option [value]='null'>Select</option>
+          <option *ngFor='let x of yojs' [value]='x'>{{x}}</option>
+        </select>
+      </li>
+      <li>
+        <label for="location">Location</label>
+        <select id="location" formControlName="location">
+          <option [value]='null'>Select</option>
+          <option *ngFor='let x of locations' [value]='x'>{{x}}</option>
+        </select>
+      </li>
+    </ul>
+    <div class="butonSecn">
+      <button class="btn btn-cancel" (click)="onClear()"> Clear </button>
+      <button class="btn btn-ok" (click)="onSubmit()"> Submit </button>
+    </div>
+  </form>
+  <div class="arrow" (click)="onClear()">
+    <i class="fa fa-chevron-left"></i>
+  </div>
+
+</div>
+

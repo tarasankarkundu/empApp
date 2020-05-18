@@ -1,0 +1,22 @@
+<div class="side-Menu">
+  <div class="fixed-Menu">
+    <img class="logo" src="assets/images/infrrd_logo.PNG" />
+    <ul class="menu">
+      <li><i class="fa fa-list"></i>Overview</li>
+      <li><i class="fa fa-envelope"></i>Messages<span class="unread">99+</span></li>
+      <li (click)="showAdvancedSearch()"><i class="fa fa-search" ></i>Search</li>
+      <li><i class="fa fa-filter" ></i>Filter</li>
+      <li><i class="fa fa-history"></i>History</li>
+      <li><i class="fa fa-user"></i>My Account</li>
+    </ul>
+    <ul class="menu bottom-menu">
+      <li><i class="fa fa-comments"></i>Get help</li>
+      <li><i class="fa fa-sign-out"></i>Sign Out</li>
+    </ul>
+  </div>
+  <div>
+    <app-advanced-search *ngIf="shouldShowAdvancedSearch" (close)="shouldShowAdvancedSearch=false"></app-advanced-search>
+  </div>
+
+
+</div>

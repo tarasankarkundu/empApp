@@ -1,0 +1,28 @@
+<div class="empCard">
+  <div class='cardHeader'>
+    <img src='assets/images/img_avatar.png'/>
+    <div class="nameSecn">
+      <div>{{empData.name}}</div>
+      <div>{{empData.designation}}</div>
+    </div>
+    <app-contact></app-contact>
+  </div>
+  <div class='cardContent'>
+    <div>
+      <label class="rating">{{empData.rating}} rating</label>
+      <ngx-stars [initialStars]="empData.rating" [color]="'#f5ad41'"></ngx-stars>
+    </div>
+    <div class="expContent">
+      <div clas="exp">
+        <label>Experience: </label> {{empData.experience}} years
+      </div>
+      <div><label>Date of Joining: </label> {{empData.yoj}}</div>
+    </div>
+    <div><label>Current Team: </label> {{empData.team}} </div>
+    <div><label>Reporting Manager: </label> {{empData.manager}}</div>
+  </div>
+  <div class='cardFooter'>
+    <div><span class="contact"><i class="fa fa-phone phone"></i></span> {{empData.tel}}</div>
+    <div><span class="contact"><i class="fa fa-envelope email"></i></span> {{empData.email}}</div>
+  </div>
+</div>

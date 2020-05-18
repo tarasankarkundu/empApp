@@ -1,0 +1,11 @@
+<div class="employeeList">
+  <div class="listHeader">
+    <span>{{empViewData.length}} Results found</span>
+    <span>
+      <input type="checkbox" [(ngModel)]="blrOnly" (change)="showBangEmployees($event.target.checked)"/> Show only Bangalore Employees
+    </span>
+  </div>
+  <div class="employeeCardList">
+    <app-employee-card *ngFor="let emp of empViewData" [empData]="emp"></app-employee-card>
+  </div>
+</div>
