@@ -28,7 +28,7 @@ describe('EmployeeCardComponent', () => {
       "team": "Rustify",
       "manager": "Lalit Agarwal",
       "tel": 7406559241,
-      "email": "andrew@infrrd.ai",
+      "email": "andrew@emp.ai",
       "dp":"andrew.png",
       "location": "Bangalore",
       "department": "Human Resourse Management"
